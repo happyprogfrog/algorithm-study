@@ -35,7 +35,7 @@ public class Quest9 {
     }
 
     private static int dfs(Node node, int level) {
-        if (node.lt == null && node.rt == null) {;
+        if (node.lt == null && node.rt == null) {
             return level;
         } else {
             return Math.min(dfs(node.lt, level + 1), dfs(node.rt, level + 1));
